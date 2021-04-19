@@ -31,6 +31,7 @@ Detecta las lineas mas oscuras, como en la boca (lineal)<br />
 Las pestañas, detecta el cambio de color, la division<br />
 <img src="images/6.png" width="40%"/>
 <img src="images/5.png" width="40%"/><br />
+Deteccion de los vaores entre 0 y 1 (escala de grises)<br />
 <img src="images/7.png"/><br />
 Para calcular que representa el blanco y el negro se calcula la media de los valores<br />
 <img src="images/8.png"/><br />
