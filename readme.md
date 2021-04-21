@@ -10,11 +10,33 @@
 
 # Setup
 
+Add project
+```
+python3 -m venv entorno
+source entorno/bin/activate
+pip freeze >> requirements.txt
+```
+
+```sh
+pip install opencv-python
+```
+
 # Imagenes
 Las imagenes **RGB** se componen de una matriz de 3 canales (red, blue & green)<br />
 <img src="images/1.png" width="50%"/>
 <img src="images/2.png" width="40%"/><br />
 Convertir una imagen a **blanco y negro** hace que funcione de manera binaria y mucho mas simple para la maquina<br />
+
+## Integral Image
+Es muy costoso hacer una sumatoria de cuadrados para cada uno, por eso utilizamos una imagen integral<br />
+Genera matriz sumando los valores hasta la izquierda y hasta arriba<br />
+<img src="images/9.png"/><br />
+De esta manera solo tenemos que realizar la ecuacion con estos 4 valores, por mas que el cuadro contenga miles de pixels<br />
+<img src="images/10.png" width="40%"/>
+<img src="images/11.png" width="40%"/><br />
+<img src="images/12.png" width="40%"/>
+<img src="images/13.png" width="40%"/><br />
+<img src="images/14.png"/><br />
 
 # OpenCV
 
