@@ -37,6 +37,11 @@ De esta manera solo tenemos que realizar la ecuacion con estos 4 valores, por ma
 <img src="images/12.png" width="40%"/>
 <img src="images/13.png" width="40%"/><br />
 <img src="images/14.png"/><br />
+<img src="images/15.png"/>
+
+## Cascading 
+<img src="images/16.png"/><br />
+<img src="images/17.png"/><br />
 
 # OpenCV
 
