@@ -3,3 +3,6 @@
 */MNIST-data/
 */entorno
 */*/entorno
+*/*/data
+*/*/*.pth
+*/*/output.mp4
