@@ -1,12 +1,14 @@
 - [Setup](#setup)
 - [Imagenes](#imagenes)
-- [OpenCV](#opencv)
   * [Algoritmos](#algoritmos)
     + [Viola-Jones](#viola-jones)
     + [Haar-like Features](#haar-like-features)
+  * [Integral Image](#integral-image)
+  * [Cascading](#cascading)
+- [OpenCV](#opencv)
+- [Generative Adversarial Networks (GANs)](#generative-adversarial-networks--gans-)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 # Setup
 
@@ -27,24 +29,6 @@ Las imagenes **RGB** se componen de una matriz de 3 canales (red, blue & green)<
 <img src="images/2.png" width="40%"/><br />
 Convertir una imagen a **blanco y negro** hace que funcione de manera binaria y mucho mas simple para la maquina<br />
 
-## Integral Image
-Es muy costoso hacer una sumatoria de cuadrados para cada uno, por eso utilizamos una imagen integral<br />
-Genera matriz sumando los valores hasta la izquierda y hasta arriba<br />
-<img src="images/9.png"/><br />
-De esta manera solo tenemos que realizar la ecuacion con estos 4 valores, por mas que el cuadro contenga miles de pixels<br />
-<img src="images/10.png" width="40%"/>
-<img src="images/11.png" width="40%"/><br />
-<img src="images/12.png" width="40%"/>
-<img src="images/13.png" width="40%"/><br />
-<img src="images/14.png"/><br />
-<img src="images/15.png"/>
-
-## Cascading 
-<img src="images/16.png"/><br />
-<img src="images/17.png"/><br />
-
-# OpenCV
-
 ## Algoritmos
 
 ### Viola-Jones
@@ -62,3 +46,26 @@ Deteccion de los vaores entre 0 y 1 (escala de grises)<br />
 <img src="images/7.png"/><br />
 Para calcular que representa el blanco y el negro se calcula la media de los valores<br />
 <img src="images/8.png"/><br />
+
+## Integral Image
+Es muy costoso hacer una sumatoria de cuadrados para cada uno, por eso utilizamos una imagen integral<br />
+Genera matriz sumando los valores hasta la izquierda y hasta arriba<br />
+<img src="images/9.png"/><br />
+De esta manera solo tenemos que realizar la ecuacion con estos 4 valores, por mas que el cuadro contenga miles de pixels<br />
+<img src="images/10.png" width="40%"/>
+<img src="images/11.png" width="40%"/><br />
+<img src="images/12.png" width="40%"/>
+<img src="images/13.png" width="40%"/><br />
+<img src="images/14.png"/><br />
+<img src="images/15.png"/>
+
+## Cascading 
+<img src="images/16.png"/><br />
+<img src="images/17.png"/><br />
+
+# OpenCV
+OpenCV no utiliza redes neuronales, por eso solo importamos **cv2**, solo utiliza cascade<br />
+Es ideal para deteccion facial<br />
+
+# Generative Adversarial Networks (GANs)
+Redes generativas de confrontacion 
