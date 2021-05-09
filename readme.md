@@ -67,5 +67,11 @@ De esta manera solo tenemos que realizar la ecuacion con estos 4 valores, por ma
 OpenCV no utiliza redes neuronales, por eso solo importamos **cv2**, solo utiliza cascade<br />
 Es ideal para deteccion facial<br />
 
+
+# SSD
+Single Shot detection><br />
+<img src="images/18.png"/><br />
+<img src="images/19.png"/>
+
 # Generative Adversarial Networks (GANs)
 Redes generativas de confrontacion 
