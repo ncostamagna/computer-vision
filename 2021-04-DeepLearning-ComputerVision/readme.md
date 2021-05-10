@@ -19,3 +19,4 @@ https://www.superdatascience.com/computer-vision
 Reconocimiento facial, de ojos y de sonrisas. Utiliza haar cascade
 
 # Deteccion de objetos
+El diccionario de objetos como dog, human estan en VOC_CLASSES

@@ -63,15 +63,25 @@ De esta manera solo tenemos que realizar la ecuacion con estos 4 valores, por ma
 <img src="images/16.png"/><br />
 <img src="images/17.png"/><br />
 
-# OpenCV
-OpenCV no utiliza redes neuronales, por eso solo importamos **cv2**, solo utiliza cascade<br />
-Es ideal para deteccion facial<br />
-
 
 # SSD
 Single Shot detection><br />
 <img src="images/18.png"/><br />
 <img src="images/19.png"/>
+
+
+# Multi-Box
+Se generan muchos box en cada punto, y de esa manera buscamos detectar objetos<br />
+POr ejemplo, detecta y coloca en rojo cuando encuentra una persona<br />
+<img src="images/20.png"/><br />
+<img src="images/21.png"/><br />
+
+
+# OpenCV
+OpenCV no utiliza redes neuronales, por eso solo importamos **cv2**, solo utiliza cascade<br />
+Es ideal para deteccion facial<br />
+
+
 
 # Generative Adversarial Networks (GANs)
 Redes generativas de confrontacion 
