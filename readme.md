@@ -84,4 +84,5 @@ Es ideal para deteccion facial<br />
 
 
 # Generative Adversarial Networks (GANs)
-Redes generativas de confrontacion 
+Redes generativas de confrontacion, pueden crear imagenes que no existian
+
