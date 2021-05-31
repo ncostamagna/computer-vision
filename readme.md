@@ -84,5 +84,19 @@ Es ideal para deteccion facial<br />
 
 
 # Generative Adversarial Networks (GANs)
-Redes generativas de confrontacion, pueden crear imagenes que no existian
+Redes generativas de confrontacion, pueden crear imagenes que no existian.
+Se divide en 2:
 
+### Generator (G)
+Genera las imagenes en base al ruido, genera imagenes aleatoreas que utilizaremos para entrenar al **Discriminator**, luego que el discriminator termina hacemos la propagacion hacia atras y volvemos a crear imagenes en base a lo que aprendio el **D**
+
+### Discriminator (D)
+Rival de **G**, aprende la las imagenes de animales, personas, etc.. <br />
+Discrimina de lo que son perros y lo que no son perros, por ejemplo.<br />
+Me viene una imagen y devuelvo 1 si es un perro o un 0 si no lo es <br />
+<img src="images/22.png"/><br />
+
+## Entrenamiento
+<img src="images/23.png"/><br />
+<img src="images/24.png"/><br />
+<img src="images/25.png"/><br />
