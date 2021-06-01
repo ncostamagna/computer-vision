@@ -100,3 +100,9 @@ Me viene una imagen y devuelvo 1 si es un perro o un 0 si no lo es <br />
 <img src="images/23.png"/><br />
 <img src="images/24.png"/><br />
 <img src="images/25.png"/><br />
+
+## Usos de GANs
+- Generar imagenes
+- Modificar imagenes
+- Super resolucion
+- Generador de Speech
