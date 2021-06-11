@@ -39,6 +39,7 @@ class G(nn.Module):
     def __init__(self):
         super(G, self).__init__()
         self.main = nn.Sequential(
+            # Los diferentes modulos ded manera secuencial, que iremos generando
             nn.ConvTranspose2d(100, 512, 4, 1, 0, bias = False),
             nn.BatchNorm2d(512),
             nn.ReLU(True),
@@ -70,6 +71,7 @@ class D(nn.Module):
     def __init__(self):
         super(D, self).__init__()
         self.main = nn.Sequential(
+            # Los diferentes modulos ded manera secuencial, que iremos generando
             nn.Conv2d(3, 64, 4, 2, 1, bias = False),
             nn.LeakyReLU(0.2, inplace = True),
             nn.Conv2d(64, 128, 4, 2, 1, bias = False),
