@@ -12,7 +12,7 @@ import imageio
 def detect(frame, net, transform): # We define a detect function that will take as inputs, a frame, a ssd neural network, and a transformation to be applied on the images, and that will return the frame with the detector rectangle.
     height, width = frame.shape[:2] # We get the height and the width of the frame.
     frame_t = transform(frame)[0] # We apply the transformation to our frame.
-    x = torch.from_numpy(frame_t).permute(2, 0, 1) # We convert the frame into a torch tensor. permute convierte los colores a lo que queremos recibir
+    x = torch.from_numpy(frame_t).permute(2, 0, 1) # We convert the frame into a torch tensor, permute convierte los colores a lo que queremos recibir
     x = Variable(x.unsqueeze(0)) # We add a fake dimension corresponding to the batch.
     y = net(x) # We feed the neural network ssd with the image and we get the output y.
     detections = y.data # We create the detections tensor contained in the output y.

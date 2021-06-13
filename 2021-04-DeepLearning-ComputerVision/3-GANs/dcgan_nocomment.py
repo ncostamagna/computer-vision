@@ -83,6 +83,8 @@ class D(nn.Module):
             nn.Conv2d(256, 512, 4, 2, 1, bias = False),
             nn.BatchNorm2d(512),
             nn.LeakyReLU(0.2, inplace = True),
+
+            # Discrimino por 1, si es la imagen o no
             nn.Conv2d(512, 1, 4, 1, 0, bias = False),
             nn.Sigmoid()
         )
@@ -107,10 +109,10 @@ for epoch in range(25):
         
         # 1st Step: Updating the weights of the neural network of the discriminator
 
-        netD.zero_grad()
+        netD.zero_grad() # Iniciara en 0 
         
         # Training the discriminator with a real image of the dataset
-        real, _ = data
+        real, _ = data # data real
         input = Variable(real)
         target = Variable(torch.ones(input.size()[0]))
         output = netD(input)

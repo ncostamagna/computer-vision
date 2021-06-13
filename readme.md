@@ -106,3 +106,7 @@ Me viene una imagen y devuelvo 1 si es un perro o un 0 si no lo es <br />
 - Modificar imagenes
 - Super resolucion
 - Generador de Speech
+
+# Deep Learning
+El concepto de deep learning existio siempre, lo que le da tanto impacto hoy en dia es el aumento de la capacidad<br />
+<img src="images/26.png"/><br />
