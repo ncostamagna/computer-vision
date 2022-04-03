@@ -120,7 +120,7 @@ Tecnicas para localizar y extraer texto, para esto utilizaremos 2 tecnologias:
 - Natural Language Processing
   - Extraer entidades del texto
   - Limpieaza del texto
-<img>
+<p align="center" width="100%"><img src="images/27.png" width="100%" a="center"/> </p>
 
 ## Tesseract
 Open source reconocimiento de texto, es un Apache: https://tesseract-ocr.github.io/tessdoc/Installation.html
