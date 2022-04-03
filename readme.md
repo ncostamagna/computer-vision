@@ -110,3 +110,40 @@ Me viene una imagen y devuelvo 1 si es un perro o un 0 si no lo es <br />
 # Deep Learning
 El concepto de deep learning existio siempre, lo que le da tanto impacto hoy en dia es el aumento de la capacidad<br />
 <img src="images/26.png"/><br />
+
+# OCR
+Tecnicas para localizar y extraer texto, para esto utilizaremos 2 tecnologias:
+- Computer Vision
+  - Escanear documento
+  - Identificar la ubicacion del texto
+  - Extraer el texto
+- Natural Language Processing
+  - Extraer entidades del texto
+  - Limpieaza del texto
+<img>
+
+## Tesseract
+Open source reconocimiento de texto, es un Apache: https://tesseract-ocr.github.io/tessdoc/Installation.html
+
+### Setup
+
+```sh
+sudo apt install tesseract-ocr
+sudo apt install libtesseract-dev
+
+pip install pytesseract
+```
+
+## Spacy
+Procesamiento del lenguaje natural: https://spacy.io/ <br />
+Nos proporciona ya un modelo de NLP
+
+### Setup
+Para instalarlo vamos a https://spacy.io/usage
+
+```sh
+pip install -U pip setuptools wheel
+pip install -U spacy
+python -m spacy download en_core_web_sm # bajaremos el modelo para entrenar nuestros documentos
+python -m spacy download es_core_news_sm
+```

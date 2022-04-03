@@ -6,3 +6,8 @@
 */*/data
 */*/*.pth
 */*/output.mp4
+env
+.ipynb_*
+*/.ipynb_*
+*/*/.ipynb_*
+*/*/*/.ipynb_*
