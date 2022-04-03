@@ -5,10 +5,20 @@
     + [Haar-like Features](#haar-like-features)
   * [Integral Image](#integral-image)
   * [Cascading](#cascading)
+- [SSD](#ssd)
+- [Multi-Box](#multi-box)
 - [OpenCV](#opencv)
 - [Generative Adversarial Networks (GANs)](#generative-adversarial-networks--gans-)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+    + [Generator (G)](#generator--g-)
+    + [Discriminator (D)](#discriminator--d-)
+  * [Entrenamiento](#entrenamiento)
+  * [Usos de GANs](#usos-de-gans)
+- [Deep Learning](#deep-learning)
+- [OCR](#ocr)
+  * [Tesseract](#tesseract)
+    + [Setup](#setup-1)
+  * [Spacy](#spacy)
+    + [Setup](#setup-2)
 
 # Setup
 
