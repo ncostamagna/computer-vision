@@ -144,6 +144,30 @@ sudo apt install libtesseract-dev
 pip install pytesseract
 ```
 
+### Pytesseract
+Pytesseract nos proporciona 5 niveles:
+- level 1: Son los pages
+- level 2: Son los bloques
+- level 3: Son los parrafos
+- level 4: Son las lineas
+- level 5: Son las palabras
+<br />
+
+En la **pagina** detectaremos el **bloque**, el **parrafo**, la **linea** y las **palabras**,
+las palabras se las pasaremos a un modelo para que nos haga la clasificacion
+
+<p align="center" width="100%">
+  <img src="images/29.png" width="32%"/>
+  <img src="images/30.png" width="32%"/>
+  <img src="images/31.png" width="32%"/>
+</p>
+
+<p align="center" width="100%">
+  <img src="images/32.png" width="32%"/>
+  <img src="images/33.png" width="32%"/>
+  <img src="images/34.png" width="32%"/>
+</p>
+
 ## Spacy
 Procesamiento del lenguaje natural: https://spacy.io/ <br />
 Nos proporciona ya un modelo de NLP
@@ -157,3 +181,6 @@ pip install -U spacy
 python -m spacy download en_core_web_sm # bajaremos el modelo para entrenar nuestros documentos
 python -m spacy download es_core_news_sm
 ```
+
+## Arquitectura
+<p align="center" width="100%"><img src="images/28.png" width="100%" a="center"/> </p>
