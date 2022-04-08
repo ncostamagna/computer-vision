@@ -11,3 +11,4 @@ env
 */.ipynb_*
 */*/.ipynb_*
 */*/*/.ipynb_*
+*/output/*

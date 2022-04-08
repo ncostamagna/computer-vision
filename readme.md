@@ -182,5 +182,61 @@ python -m spacy download en_core_web_sm # bajaremos el modelo para entrenar nues
 python -m spacy download es_core_news_sm
 ```
 
+### Preparacion
+Para poder utilizar y entrenar los datos debemos generarlos con el siguiente formato
+<img>
+Tiene el texto completo y las entidades con:
+- numero de donde comienza la palabra
+- numero de donde termina la palabra (donde esta el espacio en blanco)
+- label de la palabra 
+
+### Configuracion
+Como entrenar el modelo: https://spacy.io/usage/training
+<br />
+
+En **QuickStart** vemos las opciones para que nos autogenere la configuracion,
+seleccionamos: English, ner, CPU, efficiency<br />
+Luego seleccionamos download
+<br />
+
+Ejecutamos el comando:
+
+```sh
+# nos va a generar el archivo config.cfg
+python -m spacy init fill-config base_config.cfg config.cfg
+```
+
+### Entrenamiento
+Preparamos los datos para entrenar y ejecutamos el siguiente comando
+```sh
+python -m spacy train ./config.cfg --output ./output --paths.train ./data/train.spacy --paths.dev ./data/test.spacy
+```
+Pero antes debemos preparar los datos pasandolos de picker al formato spacy (que es el formato que espera), vemos como lo hace aca https://spacy.io/usage/training#training-data
+
+```py
+import spacy
+from spacy.tokens import DocBin
+
+nlp = spacy.blank("en")
+training_data = [
+  ("Tokyo Tower is 333m tall.", [(0, 11, "BUILDING")]),
+]
+# the DocBin will store the example documents
+db = DocBin()
+for text, annotations in training_data:
+    doc = nlp(text)
+    ents = []
+    for start, end, label in annotations:
+        span = doc.char_span(start, end, label=label)
+        ents.append(span)
+    doc.ents = ents
+    db.add(doc)
+db.to_disk("./train.spacy")
+```
+
+Una vez terminado el procesamiento vamos a ver los modelos en el output que definimos:
+- model-best: Es el mejor modelo, es el que vamos a usar para las predicciones
+- model-last: Es el modelo generado en la ultima iteracion
+
 ## Arquitectura
 <p align="center" width="100%"><img src="images/28.png" width="100%" a="center"/> </p>
