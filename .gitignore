@@ -12,3 +12,10 @@ env
 */*/.ipynb_*
 */*/*/.ipynb_*
 */output/*
+*/25. Face Recognition/*/*.jpg
+*/25. Face Recognition/faces/*
+*/*/*/*.jpg
+*/*/*/*/*.jpg
+*/*/*/*/*/*.jpg
+*/*/.idea
+*/*/__pycache__
